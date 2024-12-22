@@ -40,8 +40,8 @@ export default defineNuxtConfig({
   // css
   css: [
     '@unocss/reset/tailwind.css',
+    'element-plus/theme-chalk/src/index.scss',
     '~/assets/scss/index.scss',
-    resolve('node_modules/element-plus/theme-chalk/src/index.scss')
   ],
 
   // vueuse
