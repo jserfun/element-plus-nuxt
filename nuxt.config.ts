@@ -1,5 +1,13 @@
+import { createResolver } from '@nuxt/kit'
+
+const { resolve } = createResolver(import.meta.url)
+
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
+  alias: {
+    '~': resolve('app'),
+  },
+
   modules: [
     '@nuxt/eslint',
     '@vueuse/nuxt',
@@ -32,7 +40,8 @@ export default defineNuxtConfig({
   // css
   css: [
     '@unocss/reset/tailwind.css',
-    '~/assets/scss/index.scss'
+    '~/assets/scss/index.scss',
+    resolve('node_modules/element-plus/theme-chalk/src/index.scss')
   ],
 
   // vueuse

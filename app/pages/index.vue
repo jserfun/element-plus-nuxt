@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ElButton } from 'element-plus';
+
 definePageMeta({
   layout: 'home',
 })
@@ -6,8 +8,14 @@ definePageMeta({
 
 <template>
   <div class="page-index">
-    <TheLogos />
-    <TheExamples />
+    aaa
+    <ElButton type="primary">button</ElButton>
+    <br />
+    <el-button @click="ElMessage('hello')">button2</el-button>
+    <br />
+    <a>a标签</a>
+    <TheLogos></TheLogos>
+    <TheExamples></TheExamples>
   </div>
 </template>
 

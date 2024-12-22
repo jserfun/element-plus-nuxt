@@ -12,15 +12,15 @@
   "author": "Element Plus Team",
   "license": "MIT",
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
-    "dev": "nuxi dev",
-    "build": "nuxi build",
+    "dev": "nuxi dev -p 3002 ./app",
+    "build": "nuxi build ./app",
+    "preview": "nuxi preview ./app",
+    "start": "node .output/server/index.mjs",
+    "generate": "nuxi generate ./app",
+    "prepare": "nuxi prepare ./app",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "preview": "nuxi preview",
-    "start": "node .output/server/index.mjs",
-    "generate": "nuxi generate",
-    "prepare": "nuxi prepare",
+    "preinstall": "npx only-allow pnpm",
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
