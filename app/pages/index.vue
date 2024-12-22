@@ -14,6 +14,7 @@ definePageMeta({
     <el-button @click="ElMessage('hello')">button2</el-button>
     <br />
     <a>a标签</a>
+    <DarkToggle></DarkToggle>
     <TheLogos></TheLogos>
     <TheExamples></TheExamples>
   </div>
