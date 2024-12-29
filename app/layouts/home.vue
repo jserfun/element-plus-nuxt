@@ -1,5 +1,10 @@
+<script lang="ts" setup>
+
+</script>
+
 <template>
   <main class="px-10 py-20 text-center">
+    <h1>vue 3</h1>
     <RightTopMenu class="absolute top-4 right-4" />
 
     <slot />
