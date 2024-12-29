@@ -1,6 +1,6 @@
 {
   "eslint.useFlatConfig": true,
-
+  "typescript.preferences.importModuleSpecifier": "non-relative",
   "editor.formatOnSave": true,
 
   // Auto fix

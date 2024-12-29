@@ -12,6 +12,12 @@ const router = useRouter()
       <button text-sm btn m="3 t8" @click="router.back()">
         Back
       </button>
+      <button text-sm btn m="3 t8" @click="router.push('/login')">
+        to login(push)
+      </button>
+      <button text-sm btn m="3 t8" @click="router.replace('/login')">
+        to login(replace)
+      </button>
     </div>
   </main>
 </template>

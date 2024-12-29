@@ -5,7 +5,9 @@ useHead({
   title: appName,
 })
 </script>
+
 <template>
+  <NuxtLoadingIndicator />
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>

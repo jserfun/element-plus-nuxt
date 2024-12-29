@@ -2,5 +2,5 @@
 </script>
 
 <template>
-  <div class="page page-login"></div>
+  <div class="page page-login">login</div>
 </template>
